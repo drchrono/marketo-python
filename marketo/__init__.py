@@ -50,7 +50,8 @@ class Client:
                 'Connection': 'Keep-Alive',
                 'Soapaction': '',
                 'Content-Type': 'text/xml;charset=UTF-8',
-                'Accept': '*/*'})
+                'Accept': '*/*'},
+            timeout=5)
         return response
 
     def get_lead(self, email=None):
